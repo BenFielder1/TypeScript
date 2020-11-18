@@ -20,6 +20,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var winston = __importStar(require("winston"));
+var simpleMaths_1 = require("./simpleMaths");
 var simpleLogger = winston.createLogger({
     level: "info",
     format: winston.format.simple(),
@@ -28,5 +29,8 @@ var simpleLogger = winston.createLogger({
 function sayHello(name) {
     simpleLogger.info("Hello " + name);
 }
-sayHello('Mr Sharp');
+sayHello("Ben");
+simpleLogger.info(simpleMaths_1.calcAreaSquare(4));
+simpleLogger.info(simpleMaths_1.calculateAreaCircle(4));
+simpleLogger.info(simpleMaths_1.calculateFactorial(10));
 //# sourceMappingURL=index.js.map
