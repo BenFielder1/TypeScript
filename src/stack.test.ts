@@ -1,6 +1,6 @@
-import Stack from "/Users/year12/git/Ben-typescript-starter/comp-sci-maths-lib/src/dataStructures/stack/Stack"
+import Stack from "comp-sci-maths-lib/dist/dataStructures/stack/Stack"
 
-test("Stack", () => {
+test("Stack", function(){
     const myStack: Stack<number> = new Stack<number>()
 
     myStack.push(5)
